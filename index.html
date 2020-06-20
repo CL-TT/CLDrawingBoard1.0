@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>简易画板</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="title">图图小画板</div>
+      <canvas class="canvas" width="600px" height="400px"></canvas>
+      <ul class="box">
+        <li><input type="color" class="color" name="画笔颜色" /></li>
+        <!--color就代表着颜色的选取-->
+        <li><input type="button" id="clear" name="清屏" value="清屏" /></li>
+        <!--清屏-->
+        <li><input type="button" id="eraser" name="橡皮擦" value="橡皮" /></li>
+        <!--橡皮擦-->
+        <li><input type="button" id="cancel" name="撤销" value="撤销" /></li>
+        <!--撤销-->
+        <li class="last">
+          <input class="lineWeight" type="range" name="画笔粗细" />
+        </li>
+        <!--range代表着进度的选取-->
+      </ul>
+    </div>
+
+    <script src="./jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
